@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Catalog</title>
+</head>
+<body>
+<h1 class="w3-panel w3-leftbar w3-text-green w3-xxlarge w3-serif">Catalogul colegilor</h1>
+<p> Grupa 2115 </p>
+<div class="slideshow-container">
+<div class="w3-panel w3-leftbar w3-sand w3-large w3-serif">
+<div class="mySlides fade">
+  <a href="Profilt.html"><img src="thomas.jpg" style="width:100%">
+  <div class="text">Bontya Thomas</div>
+</div>
+
+<div class="mySlides fade">
+  <a href="profil.html"><img src="img2.jpg" style="width:100%">
+  <div class="text">Ciule Denisa</div>
+</div>
+
+<div class="mySlides fade">
+  <a href="LABORATOR5.html"><img src="poza profil.jpg" style="width:100%">
+  <div class="text">Dobrea Marius-Dorian</div>
+</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+</body>
+</html>
