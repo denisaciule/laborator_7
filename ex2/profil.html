@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function Function(){
+	
+	document.getElementById("nume").innerHTML="Obtinerea unui job in IT";
+	document.getElementById("poza").src="img3.jpg";
+	document.getElementById("poza").style.opacity="0.3";	
+	document.getElementById("poza").style.border="5px solid black";
+	document.body.style.backgroundColor = "Azure";
+	var tableed=document.getElementById("tableed");
+	tableed.rows[0].cells[0].innerHTML = "Experiente";
+	tableed.rows[0].cells[1].innerHTML = "Anul de studiu";
+	tableed.rows[0].cells[2].innerHTML = "Avantaje"
+	tableed.rows[1].cells[0].innerHTML = "OSUT";
+	tableed.rows[1].cells[1].innerHTML = "Anul I";
+	tableed.rows[1].cells[2].innerHTML = "Implicare in activitati";
+	tableed.rows[2].cells[0].innerHTML = "Proiect";
+	tableed.rows[2].cells[1].innerHTML = "Anul I";
+	tableed.rows[2].cells[2].innerHTML = "Munca in echipa";
+	tableed.rows[3].cells[0].innerHTML = "Internship";
+	tableed.rows[3].cells[1].innerHTML = "Anul IV";
+	tableed.rows[3].cells[2].innerHTML = "Pregatire practica";
+	
+	document.getElementById("c1").style.color = "wheat";
+	document.getElementById("c2").style.color = "firebrick";
+	document.getElementById("c3").style.color = "goldenRod";
+	document.getElementById("c4").style.color = "mediumSeaGreen";
+	document.getElementById("c5").style.color = "springGreen";
+}
+function Varsta()
+{
+	var azi = new Date;
+	var varstaMea;
+	var an=document.getElementById("varsta").innerHTML;
+	var anCurent=azi.getFullYear();
+	varstaMea=anCurent-parseInt(an);
+	
+	document.getElementById("varsta").innerHTML=varstaMea;
+}
+</script>
+</head>
+<style>
+body {
+	background-color: lavender;
+	}
+h1 {
+	color : turquoise;
+	font-family: "Times New Roman";
+	font-style: italic;
+	font-size: 47px;
+}
+h2 {
+	color : purple;
+	font-family: "Times New Roman";
+	font-style: italic;
+	font-size: 37px;
+}
+h3 {
+	color : red;
+	font-size: 27px;
+}
+h4 {
+	color : green;
+	font-size: 27px;
+}
+p {
+	color: olive;
+	font-family: "Arial";
+	font-style: oblique;
+	font-size: 20px;
+}
+table, th, td{
+	background-color:yellow;
+	border: 3px solid black;
+	pading: 50px;
+	font-family: "Georgia";
+	color: firebrick;
+}
+ul{
+	background-color:green;
+	border: 3px solid black;
+	font-family: "Georgia";
+	color: white;
+}
+img{
+	border: 3px solid black;
+	border-radius:15px;
+	width:300px;
+	height:500px;
+	margin:left;
+	opacity:1;
+}
+</style>
+<body>
+<h1 id="nume">Ciule Denisa-Ioana</h1>
+<p id="c1">E-mail: Ciule.Ro.Denisa@utcluj.didatec.ro </p>
+<p id="c2">Telefon: 0746143737 </p>
+<p id="c3">Adresa: Dej, județul Cluj </p>
+<img id="poza" src="img.jpg">
+<p>“Natura ne aseamănă, educația ne deosebește”. – Confucius </p>
+<p onmouseover = "Varsta()" id="varsta">2002</p>
+<button type="button" onclick="Function()">Alta viata</button>
+<h2 id="c4">Materii preferate </h2>
+<table id="tableed">
+  <tr>
+    <td><h3>Disciplina</h3></td>
+    <td><h3>Anul de studiu</h3></td>
+    <td><h3>Link</h3></td>
+  </tr>
+  <tr>
+    <td>Programarea calculatoarelor – limbaje</td>
+    <td>Anul I</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/04.pdf"</a> Descriere disciplină</td>
+  </tr>
+  <tr>
+    <td>Algebră liniară</td>
+    <td>Anul I</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/02.pdf"</a> Descriere disciplină</td>
+  </tr>
+  <td>Informatică aplicată</td>
+    <td>Anul I</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/06.pdf"</a> Descriere disciplină</td>
+   </tr>
+</table>
+<h4>Hobby-uri</h4>
+<ul id="c5">
+  <li>Să citesc</li>
+  <li>Să alerg</li>
+  <li>Să vizionez documentare</li>
+</ul>
+</body>
+</html>
